@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Filter for soft glows -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(8px); }
+      }
+      @keyframes flowDash {
+        0% { stroke-dashoffset: 60; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes shimmerBorder {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.85; }
+      }
+
+      .pulse-orb {
+        transform-origin: center;
+        animation: pulseGlow 6s ease-in-out infinite alternate;
+      }
+      .float-node-1 {
+        animation: floatParticle 5s ease-in-out infinite;
+      }
+      .float-node-2 {
+        animation: floatParticle 7s ease-in-out infinite reverse;
+      }
+      .animated-wire {
+        stroke-dasharray: 6, 6;
+        animation: flowDash 3s linear infinite;
+      }
+      .border-shimmer {
+        animation: shimmerBorder 4s ease-in-out infinite;
+      }
+      .text-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .text-sub {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+      }
+      .text-pill {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Animated Ambient Aura / Background Orbs -->
+  <g class="pulse-orb">
+    <circle cx="220" cy="100" r="140" fill="#3b82f6" opacity="0.22" filter="url(#glow)" />
+    <circle cx="980" cy="220" r="160" fill="#a855f7" opacity="0.22" filter="url(#glow)" />
+    <circle cx="600" cy="60" r="120" fill="#06b6d4" opacity="0.15" filter="url(#glow)" />
+  </g>
+
+  <!-- Background Subtle Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="320" />
+    <line x1="250" y1="0" x2="250" y2="320" />
+    <line x1="400" y1="0" x2="400" y2="320" />
+    <line x1="550" y1="0" x2="550" y2="320" />
+    <line x1="700" y1="0" x2="700" y2="320" />
+    <line x1="850" y1="0" x2="850" y2="320" />
+    <line x1="1000" y1="0" x2="1000" y2="320" />
+    <line x1="1150" y1="0" x2="1150" y2="320" />
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+  </g>
+
+  <!-- Background Dynamic Knowledge Network (Constellation wires) -->
+  <g opacity="0.45">
+    <!-- Left constellation -->
+    <line x1="90" y1="80" x2="180" y2="140" stroke="#38bdf8" stroke-width="1.5" class="animated-wire" />
+    <line x1="180" y1="140" x2="130" y2="230" stroke="#818cf8" stroke-width="1.5" />
+    <line x1="180" y1="140" x2="260" y2="180" stroke="#c084fc" stroke-width="1.5" class="animated-wire" />
+    <!-- Right constellation -->
+    <line x1="950" y1="90" x2="1040" y2="150" stroke="#c084fc" stroke-width="1.5" class="animated-wire" />
+    <line x1="1040" y1="150" x2="1120" y2="100" stroke="#818cf8" stroke-width="1.5" />
+    <line x1="1040" y1="150" x2="1020" y2="240" stroke="#38bdf8" stroke-width="1.5" class="animated-wire" />
+  </g>
+
+  <!-- Floating Dynamic Nodes (Low opacity background decorations) -->
+  <g class="float-node-1" opacity="0.6">
+    <circle cx="90" cy="80" r="5" fill="#38bdf8" filter="url(#subtleGlow)" />
+    <circle cx="180" cy="140" r="7" fill="#818cf8" />
+    <circle cx="130" cy="230" r="4" fill="#a78bfa" />
+    <circle cx="260" cy="180" r="6" fill="#38bdf8" />
+  </g>
+  <g class="float-node-2" opacity="0.6">
+    <circle cx="950" cy="90" r="6" fill="#c084fc" />
+    <circle cx="1040" cy="150" r="8" fill="#ec4899" filter="url(#subtleGlow)" />
+    <circle cx="1120" cy="100" r="5" fill="#818cf8" />
+    <circle cx="1020" cy="240" r="5" fill="#38bdf8" />
+  </g>
+
+  <!-- Elegant Container Backdrop Plate to guarantee foreground contrast -->
+  <rect x="140" y="32" width="920" height="256" rx="16" fill="#070c18" fill-opacity="0.82" stroke="#334155" stroke-width="1" class="border-shimmer" />
+
+  <!-- Top Category Badge Pill -->
+  <g>
+    <rect x="440" y="52" width="320" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <circle cx="456" cy="66" r="4" fill="#10b981" />
+    <text x="600" y="70" fill="#a5b4fc" font-size="11" text-anchor="middle" class="text-pill">
+      📚 Curated Knowledge Ecosystem • 2026
+    </text>
+  </g>
+
+  <!-- Main Title (Crisp, High-Contrast Foreground) -->
+  <text x="600" y="132" text-anchor="middle" font-size="38" fill="url(#titleGradient)" class="text-title" filter="drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8))">
+    Awesome Knowledge Base Management
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="172" text-anchor="middle" font-size="16" fill="#94a3b8" class="text-sub">
+    Curated Hub of SaaS Leaders &amp; Self-Hosted Open-Source Documentation &amp; Wiki Tools
+  </text>
+
+  <!-- Key Pillars / Feature Pills in Foreground -->
+  <g transform="translate(200, 212)">
+    <!-- Pill 1: Self-Service -->
+    <rect x="0" y="0" width="180" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="1" />
+    <text x="90" y="22" text-anchor="middle" font-size="12" fill="#cbd5e1" class="text-sub">
+      💬 Self-Service Support
+    </text>
+
+    <!-- Pill 2: Team Wikis -->
+    <rect x="200" y="0" width="170" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="1" />
+    <text x="285" y="22" text-anchor="middle" font-size="12" fill="#cbd5e1" class="text-sub">
+      📖 Team Wikis &amp; Docs
+    </text>
+
+    <!-- Pill 3: Data Sovereignty -->
+    <rect x="390" y="0" width="195" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="1" />
+    <text x="487" y="22" text-anchor="middle" font-size="12" fill="#cbd5e1" class="text-sub">
+      🔒 Data Sovereignty
+    </text>
+
+    <!-- Pill 4: AI Knowledge -->
+    <rect x="605" y="0" width="195" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="1" />
+    <text x="702" y="22" text-anchor="middle" font-size="12" fill="#cbd5e1" class="text-sub">
+      🤖 AI Verification &amp; Search
+    </text>
+  </g>
+
+  <!-- Outer Border Stroke -->
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="none" stroke="#334155" stroke-width="1.5" />
+</svg>

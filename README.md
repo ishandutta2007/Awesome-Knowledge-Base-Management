@@ -1,233 +1,185 @@
-# Awesome-Knowledge-Base-Management
-
-# Awesome-Knowledge-Base-Management
-
-## Top Knowledge Base Management Tools Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Self-Service Documentation, Team Wikis & Structured Content Delivery*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Knowledge Base Management Tools**. These tools help organizations create, organize, and deliver help articles, internal documentation, engineering runbooks, and customer-facing knowledge bases — enabling self-service support, onboarding, and institutional knowledge retention.
-
-
-
-**Examples** include Salesforce Knowledge, Zendesk Guide, Document360, Guru, Notion Enterprise, Slite, Confluence, GitBook, Helpjuice, and Freshdesk Solutions (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom content workflows, and transparent knowledge management — ideal for teams prioritizing data sovereignty, developers building documentation platforms, and organizations avoiding per-seat pricing.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Salesforce Knowledge](https://www.salesforce.com/)**  
-
-  Knowledge management within Salesforce Service Cloud with article versioning, multi-language support, and case deflection capabilities.
-
-
-
-- **[Zendesk Guide](https://www.zendesk.com/)**  
-
-  Help center and knowledge base within Zendesk suite with article management, search, and self-service portal.
-
-
-
-- **[Document360](https://document360.com/)**  
-
-  Knowledge base platform with versioning, analytics, and multi-language support for SaaS and enterprise documentation.
-
-
-
-- **[Guru](https://www.getguru.com/)**  
-
-  AI-powered knowledge management platform with browser extension, verification workflows, and Slack/Teams integration.
-
-
-
-- **[Notion Enterprise](https://www.notion.com/)**  
-
-  All-in-one workspace with wikis, databases, and knowledge management capabilities for teams and enterprises.
-
-
-
-- **[Slite](https://slite.com/)**  
-
-  Knowledge base and documentation platform with AI-powered answers, collections, and collaborative editing.
-
-
-
-- **[Confluence](https://www.atlassian.com/software/confluence)**  
-
-  Enterprise wiki and knowledge management platform from Atlassian with spaces, pages, and extensive integration ecosystem.
-
-
-
-- **[GitBook](https://www.gitbook.com/)**  
-
-  Documentation platform for technical teams with Git sync, versioning, and customizable published sites.
-
-
-
-- **[Helpjuice](https://helpjuice.com/)**  
-
-  Knowledge base software with AI-powered search, analytics, and multi-brand support for customer support teams.
-
-
-
-- **[Freshdesk Solutions](https://www.freshworks.com/freshdesk/)**  
-
-  Knowledge base module within Freshdesk with article management, categories, and self-service portal.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[BookStack](https://github.com/BookStackApp/BookStack)**  
-
-  Leading open-source documentation platform organized as shelves, books, chapters, and pages. MIT licensed, PHP/Laravel stack with MySQL 8+ or MariaDB 10.6+. Features WYSIWYG and Markdown editors, role-based permissions, full-text search, integrated draw.io diagrams, LDAP/SAML2/OIDC authentication, and revision history. Runs comfortably on 2 GB RAM. Project code moved from GitHub to Codeberg in April 2026 .
-
-
-
-- **[Outline](https://github.com/outline/outline)**  
-
-  Modern open-source wiki and knowledge base positioned as a Notion alternative. Block-based editor with slash commands, nested document hierarchies, full-text search, and backlinks. BSL 1.1 licensed (converting to Apache 2.0 in 2030), Node.js with PostgreSQL 14+ and Redis. Requires external auth provider (Google, Slack, OIDC); SAML is paid. Most polished editor among open-source options .
-
-
-
-- **[Wiki.js](https://github.com/requarks/wiki)**  
-
-  Flexible open-source wiki with browser-based editor, Markdown support, nested pages, granular permissions, and Git-backed content storage. AGPL-3.0 licensed, Node.js with PostgreSQL recommended. Version 2.5.x is production-ready; 3.0 is beta. Supports LDAP, SAML, OIDC authentication and multiple database backends .
-
-
-
-- **[DokuWiki](https://github.com/dokuwiki/dokuwiki)**  
-
-  Lightweight open-source wiki using flat-file storage (no database required). GPL-2.0 licensed, PHP-based, runs on minimal hardware. Features namespaces for organization, ACL permissions, full-text search, page revisions, and extensive plugin ecosystem. Ideal for small teams wanting zero database administration. Interface feels dated compared to modern alternatives .
-
-
-
-- **[MediaWiki](https://github.com/wikimedia/mediawiki)**  
-
-  The engine behind Wikipedia. GPL-2.0+ licensed, PHP-based with MariaDB/MySQL/PostgreSQL/SQLite support. Excellent for very large knowledge collections with templates, categories, namespaces, and discussion pages. Requires more administration for polished internal deployments; interface less approachable for occasional contributors .
-
-
-
-- **[Docusaurus](https://github.com/facebook/docusaurus)**  
-
-  Static site generator for documentation websites built with React. MDX support allows embedding React components in Markdown. Features i18n, versioning, Algolia/Typesense search integration, and plugin architecture. Generates static files deployable to any hosting platform. MIT licensed .
-
-
-
-- **[MkDocs](https://github.com/mkdocs/mkdocs)**  
-
-  Fast, simple static site generator for project documentation written in Markdown. Python-based with Material for MkDocs as a popular theme. Features live-reloading development server, plugin ecosystem, and Markdown extension support. BSD licensed .
-
-
-
-- **[Docsify](https://github.com/docsifyjs/docsify)**  
-
-  Lightweight documentation site generator that renders Markdown files on-the-fly without build process. No static HTML generation — fetches and parses Markdown in browser. MIT licensed. Features multiple themes, plugin system, full-text search, and Vue compatibility .
-
-
-
-- **[Tome](https://github.com/tomehq/tome)**  
-
-  Open-source documentation platform for developers with Markdown/MDX support, auto-generated OpenAPI references, Pagefind/Algolia search, and static output deployable anywhere. MIT licensed. Features AI chat with BYOK, MCP server for AI tools, TypeDoc generation, and one-command migration from GitBook/Mintlify .
-
-
-
-- **[Sourcey](https://github.com/sourcey/sourcey)**  
-
-  Open-source documentation platform for API docs. Point at an OpenAPI spec, add Markdown guides, get a complete docs site with static HTML output. AGPL-3.0 licensed. Features auto-generated code samples in 10 languages, theme presets, Vite dev server, and client-side search. No vendor lock-in .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Docmost](https://github.com/docmost/docmost)** — Open-source collaborative wiki and documentation platform, alternative to Confluence and Notion. AGPL-3.0 core, PostgreSQL and Redis. Pre-1.0 but actively developed .
-
-- **[Logseq](https://github.com/logseq/logseq)** — Local-first outliner and knowledge base with graph view, Markdown files on disk, and journal workflow. AGPL-3.0 licensed. Best for personal knowledge management rather than teams .
-
-- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** — Open-source Notion alternative with documents, databases, kanban, and calendar. AGPL-3.0 licensed, Flutter-based, local-first with self-hosted sync option. AI features maturing .
-
-- **[TriliumNext](https://github.com/TriliumNext/Notes)** — Hierarchical personal knowledge base with JavaScript scripting inside notes, REST API, and deep tree organization. Community fork of archived Trilium Notes. AGPL-3.0 licensed .
-
-- **[Anytype](https://github.com/anytypeio/anytype-ts)** — Local-first, object-based knowledge tool with peer-to-peer sync and end-to-end encryption. AGPL-3.0 licensed .
-
-- **Static Site Generators** — Astro/Starlight, VitePress for high-performance documentation sites.
-
-- **API Documentation** — Redocly, Fern for OpenAPI-driven reference docs.
-
-
-
-**Frameworks for building custom systems**: Combine **BookStack** or **Outline** for team wikis, **Wiki.js** for Git-backed documentation, **Docusaurus** or **MkDocs** for developer docs, **DokuWiki** for minimal infrastructure, and **Docmost** for collaborative editing to build a complete self-hosted knowledge base stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Knowledge base tools must comply with data protection regulations (GDPR, CCPA), accessibility standards, and content licensing requirements.
-
-- Self-hosted open-source solutions require proper security hardening, backup strategies, and ongoing maintenance.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Knowledge Base Management" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Knowledge-Base-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Knowledge-Base-Management?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Knowledge-Base-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Knowledge-Base-Management?style=flat-square&logo=github" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Knowledge-Base-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Knowledge-Base-Management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 📚 Awesome Knowledge Base Management
 
+> **A comprehensive, SEO-optimized directory of category-leading SaaS platforms and open-source GitHub projects for Knowledge Base Management Systems (KBMS), internal team wikis, self-service customer support portals, engineering runbooks, and structured documentation ecosystems.**
 
-**Made for documentation teams, support managers, technical writers, and developers building knowledge base platforms.**  
+Knowledge base management software empowers modern teams to centralize institutional memory, automate customer deflection, coordinate asynchronous engineering operations, and provide verified information retrieval across distributed workforces.
 
-Let's make knowledge base management more open, data-sovereign, and writer-friendly.
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Knowledge Base Platforms](#️-saas--hosted-knowledge-base-platforms)
+- [💻 Open-Source Knowledge Base & Wiki Projects](#-open-source-knowledge-base--wiki-projects)
+- [🧭 Architecture & Selection Matrix](#-architecture--selection-matrix)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⭐ Star History](#-star-history)
+- [💖 Support & Sponsoring](#-support--sponsoring)
+- [⚖️ Disclaimer & License](#️-disclaimer--license)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+- **Estimated Market Size & Growth**: The global Knowledge Management Software market was valued at **~$19.5 Billion in 2024** and is projected to surpass **~$42.8 Billion by 2032**, demonstrating a compound annual growth rate (**CAGR of ~11.8%**). This acceleration is driven by enterprise generative AI integration (RAG and LLM grounding), remote/hybrid workforce documentation needs, and an urgent mandate for customer support ticket deflection.
+- **Market Structure & Fragmentation**: The sector is **moderately fragmented** rather than a winner-take-all monopoly. While enterprise tech titans (Salesforce, Atlassian, Zendesk) dominate high-ACV corporate contracts and support service desks, high-velocity agile SaaS providers (Notion, GitBook, Guru) and robust self-hosted open-source platforms (AppFlowy, AFFiNE, Docusaurus, Outline, BookStack) command strong adoption among engineering teams, fast-growing startups, and privacy-conscious organizations demanding data sovereignty and zero seat-tax licensing.
+
+---
+
+## ☁️ SaaS & Hosted Knowledge Base Platforms
+
+The table below compiles industry-leading SaaS solutions, sorted in descending order by **Company Scale (Valuation / Annual Revenue)**.
+
+| Platform & Vendor | Primary Category & Key Features | Company Scale (Valuation / Revenue) 🔽 | Starting Tier Pricing | Free Forever Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Salesforce Knowledge](https://www.salesforce.com/)** | Enterprise CRM Knowledge Base, case deflection, multi-lingual authoring, Agentforce AI integration | **~$34.9B ARR / ~$280B Market Cap** | **$25 / user / month** (Service Cloud Starter Suite, billed annually) | **30-day free trial** (Full Service Cloud access for up to 10 users, pre-built service workflows; no credit card required; no permanent free tier) |
+| **[Confluence](https://www.atlassian.com/software/confluence)** (Atlassian) | Enterprise team workspace, collaborative wiki, Jira workflow integration, Atlassian Intelligence | **~$4.3B Revenue / ~$45B Market Cap** | **$6.05 / user / month** (Standard plan, billed annually) | **Free forever plan** (Up to 10 users, 2 GB total file storage, unlimited spaces and pages, community support; 14-day free trial for Standard/Premium) |
+| **[Zendesk Guide](https://www.zendesk.com/)** | Customer support help center, knowledge base, multi-brand self-service portal, Answer Bot | **$10.2B Private Valuation / ~$1.7B ARR** | **$19 / agent / month** (Support Team tier, billed annually) | **14-day free trial** (Full Zendesk Suite capabilities unlocked, sample data, multi-channel support; no credit card required; no permanent free tier) |
+| **[Notion Enterprise](https://www.notion.com/)** | All-in-one connected workspace, modular docs, relational databases, team wikis, Notion AI | **$10.0B Valuation / ~$250M ARR** | **$10 / user / month** ($8 / user / mo billed annually for Plus plan) | **Free forever plan** (Unlimited pages & blocks for individuals, up to 10 guest collaborators, 5 MB file upload cap; 1,000-block trial for teams) |
+| **[Freshdesk Solutions](https://www.freshworks.com/freshdesk/)** (Freshworks) | Omnichannel service desk, public help center, article lifecycle management, Freddy AI bot | **~$700M ARR / ~$3.5B Market Cap** | **$15 / agent / month** (Growth tier, billed annually) | **Free forever plan** (Up to 10 agents, includes public & internal knowledge base, ticket management; 14-day free trial for paid tiers) |
+| **[Guru](https://www.getguru.com/)** | AI-powered enterprise search & wiki, verification workflows, browser extension, Slack/Teams bots | **~$600M Valuation / ~$30M ARR** | **$10 / user / month** (Builder tier, billed annually) | **30-day free trial** (Full AI search, automated verification workflows, browser extension, unlimited knowledge cards; no permanent free tier) |
+| **[GitBook](https://www.gitbook.com/)** | Developer-centric technical documentation, Git/GitHub two-way synchronization, markdown native | **~$300M Valuation / ~$15M ARR** | **$6.70 / user / month** (Plus tier, billed annually; $14 / user / mo monthly) | **Free forever plan** (1 public documentation site for individual technical writers & open-source projects, unlimited docs, Git sync; 14-day trial on Plus) |
+| **[Document360](https://document360.com/)** (Kovai.co) | Purpose-built product knowledge base, private/public portals, version control, API documentation | **~$100M Valuation / ~$18M ARR** | **$149 / project / month** (Standard plan, includes 3 team seats, billed annually) | **Free forever plan** (Up to 50 articles, 1 team account, 1 public knowledge base, 1 GB storage, Document360 branding; 14-day full-feature trial) |
+| **[Helpjuice](https://helpjuice.com/)** | High-customization standalone knowledge base software, advanced search analytics, AI answers | **~$30M Valuation / ~$8M ARR** (Bootstrapped) | **$120 / month** (Starter plan flat rate for up to 4 users, all core features included) | **14-day free trial** (Unlimited features, AI search, analytics, and complimentary expert theme design customization; no permanent free tier) |
+| **[Slite](https://slite.com/)** | Clean collaborative team wiki, AI-assisted information retrieval, structured handbook collections | **~$25M Valuation / ~$4M ARR** | **$8 / user / month** (Standard plan, billed annually; $10 / user / mo monthly) | **Free forever plan** (Up to 50 collaborative docs, unlimited team members, 10 AI questions trial; 14-day free trial for Standard plan) |
+
+---
+
+## 💻 Open-Source Knowledge Base & Wiki Projects
+
+Every project below is 100% open-source or source-available for self-hosting. Sorted in descending order by **GitHub Star Count** with direct links to repo stargazers.
+
+- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** [![GitHub stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=social&color=white)](https://github.com/AppFlowy-IO/AppFlowy/stargazers)  
+  *Open-source, local-first alternative to Notion.* Built with Flutter and Rust, offering modular documents, relational databases, Kanban boards, and customizable AI assistance with complete data ownership. AGPL-3.0 licensed.
+
+- **[AFFiNE](https://github.com/toeverything/AFFiNE)** [![GitHub stars](https://img.shields.io/github/stars/toeverything/AFFiNE?style=social&color=white)](https://github.com/toeverything/AFFiNE/stargazers)  
+  *Next-gen all-in-one workspace uniting docs, whiteboard, and databases.* Combines a Notion-like text editor with a Miro-like infinite canvas, privacy-first local storage, and real-time multiplayer synchronization. MIT licensed.
+
+- **[Docusaurus](https://github.com/facebook/docusaurus)** [![GitHub stars](https://img.shields.io/github/stars/facebook/docusaurus?style=social&color=white)](https://github.com/facebook/docusaurus/stargazers)  
+  *Modern React-powered static documentation site generator from Meta.* Supports MDX (React components in Markdown), multi-language localization (i18n), semantic doc versioning, and Algolia/Typesense search integration. MIT licensed.
+
+- **[Memos](https://github.com/usememos/memos)** [![GitHub stars](https://img.shields.io/github/stars/usememos/memos?style=social&color=white)](https://github.com/usememos/memos/stargazers)  
+  *Privacy-first, ultra-lightweight knowledge sharing and micro-blogging service.* Uses Go and SQLite/PostgreSQL to deliver instant Markdown notes, tag-based taxonomy, REST APIs, and self-hosted team micro-knowledge bases. MIT licensed.
+
+- **[Joplin](https://github.com/laurent22/joplin)** [![GitHub stars](https://img.shields.io/github/stars/laurent22/joplin?style=social&color=white)](https://github.com/laurent22/joplin/stargazers)  
+  *Secure, end-to-end encrypted note-taking and knowledge organizer.* Handles large notebook hierarchies, Markdown notes with multimedia attachments, terminal/GUI clients, web clipping, and sync via Nextcloud/Dropbox/WebDAV. AGPL-3.0 licensed.
+
+- **[Logseq](https://github.com/logseq/logseq)** [![GitHub stars](https://img.shields.io/github/stars/logseq/logseq?style=social&color=white)](https://github.com/logseq/logseq/stargazers)  
+  *Privacy-first, local-first outliner and bidirectional knowledge graph platform.* Operates directly on plain-text Markdown and Org-mode files on disk, supporting flashcards, PDF annotations, queries, and graph visualizations. AGPL-3.0 licensed.
+
+- **[Outline](https://github.com/outline/outline)** [![GitHub stars](https://img.shields.io/github/stars/outline/outline?style=social&color=white)](https://github.com/outline/outline/stargazers)  
+  *Blazing-fast, modern collaborative team knowledge base and wiki.* Features a polished block-based editor, slash commands, file attachments, backlinks, full-text search, and SSO/OIDC integration. Built on Node.js, React, and PostgreSQL. BSL 1.1 licensed.
+
+- **[Slate](https://github.com/slatedocs/slate)** [![GitHub stars](https://img.shields.io/github/stars/slatedocs/slate?style=social&color=white)](https://github.com/slatedocs/slate/stargazers)  
+  *Beautiful, three-panel responsive static documentation generator for APIs.* Inspired by Stripe's renowned API docs, allowing multi-language code samples, Markdown authoring, and smooth scrolling without complex dependencies. Apache-2.0 licensed.
+
+- **[Docsify](https://github.com/docsifyjs/docsify)** [![GitHub stars](https://img.shields.io/github/stars/docsifyjs/docsify?style=social&color=white)](https://github.com/docsifyjs/docsify/stargazers)  
+  *Magical client-side documentation site generator without a build step.* Renders Markdown files on-the-fly directly in the browser. Lightweight, zero compilation delays, with rich plugin ecosystem and multi-theme support. MIT licensed.
+
+- **[Wiki.js](https://github.com/requarks/wiki)** [![GitHub stars](https://img.shields.io/github/stars/requarks/wiki?style=social&color=white)](https://github.com/requarks/wiki/stargazers)  
+  *Extensible, modern open-source wiki software built on Node.js.* Supports visual WYSIWYG, Markdown, and AsciiDoc editors, Git-backed synchronization, granular role permissions, and pluggable auth (LDAP, SAML, OIDC). AGPL-3.0 licensed.
+
+- **[MkDocs](https://github.com/mkdocs/mkdocs)** [![GitHub stars](https://img.shields.io/github/stars/mkdocs/mkdocs?style=social&color=white)](https://github.com/mkdocs/mkdocs/stargazers)  
+  *Fast, simple Python-based static site generator for project documentation.* Paired with the popular `mkdocs-material` theme, it features instant live-reload previewing, YAML configuration, search, and Markdown extension plugins. BSD-2-Clause licensed.
+
+- **[mdBook](https://github.com/rust-lang/mdBook)** [![GitHub stars](https://img.shields.io/github/stars/rust-lang/mdBook?style=social&color=white)](https://github.com/rust-lang/mdBook/stargazers)  
+  *Command-line tool to create online books and documentation from Markdown files.* Written in Rust for speed, it powers the official Rust documentation, offering search, print styling, and custom preprocessors. MPL-2.0 licensed.
+
+- **[Docmost](https://github.com/docmost/docmost)** [![GitHub stars](https://img.shields.io/github/stars/docmost/docmost?style=social&color=white)](https://github.com/docmost/docmost/stargazers)  
+  *Open-source collaborative wiki and documentation platform.* A self-hosted alternative to Confluence and Notion, featuring real-time multiplayer editing, nested document trees, spaces, file management, and role permissions. AGPL-3.0 licensed.
+
+- **[BookStack](https://github.com/BookStackApp/BookStack)** [![GitHub stars](https://img.shields.io/github/stars/BookStackApp/BookStack?style=social&color=white)](https://github.com/BookStackApp/BookStack/stargazers)  
+  *Opinionated, intuitive self-hosted documentation platform.* Organizes documentation into Shelves, Books, Chapters, and Pages. Built with PHP/Laravel and MySQL, offering WYSIWYG/Markdown modes, draw.io diagrams, revision history, and LDAP/SAML. MIT licensed.
+
+- **[Foam](https://github.com/foambubble/foam)** [![GitHub stars](https://img.shields.io/github/stars/foambubble/foam?style=social&color=white)](https://github.com/foambubble/foam/stargazers)  
+  *Personal knowledge management and sharing system built on Visual Studio Code.* Inspired by Roam Research and Obsidian, utilizing plain Markdown files, bidirectional link graphs, and Git workflows. MIT licensed.
+
+- **[Anytype](https://github.com/anyproto/anytype-ts)** [![GitHub stars](https://img.shields.io/github/stars/anyproto/anytype-ts?style=social&color=white)](https://github.com/anyproto/anytype-ts/stargazers)  
+  *Local-first, encrypted, decentralized P2P knowledge operating system.* Based on an object-oriented graph architecture where every document, task, and note is an interconnected object with zero-knowledge encryption. AGPL-3.0 licensed.
+
+- **[HedgeDoc](https://github.com/hedgedoc/hedgedoc)** [![GitHub stars](https://img.shields.io/github/stars/hedgedoc/hedgedoc?style=social&color=white)](https://github.com/hedgedoc/hedgedoc/stargazers)  
+  *Real-time collaborative Markdown editor and note-taking platform.* Formerly CodiMD, featuring live side-by-side editing, slide presentations, diagram rendering (Mermaid, Graphviz, PlantUML), and granular permission controls. AGPL-3.0 licensed.
+
+- **[SilverBullet](https://github.com/silverbulletmd/silverbullet)** [![GitHub stars](https://img.shields.io/github/stars/silverbulletmd/silverbullet?style=social&color=white)](https://github.com/silverbulletmd/silverbullet/stargazers)  
+  *Extensible, programmable, local-first personal knowledge base.* Stores all data as clean Markdown files, featuring an in-editor query language (Space Lua/Script), live templates, plug system, and offline-first PWA operation. MIT licensed.
+
+- **[MediaWiki](https://github.com/wikimedia/mediawiki)** [![GitHub stars](https://img.shields.io/github/stars/wikimedia/mediawiki?style=social&color=white)](https://github.com/wikimedia/mediawiki/stargazers)  
+  *The enterprise-scale wiki engine powering Wikipedia.* Designed for massive institutional knowledge repositories with rich templating, category namespaces, comprehensive audit histories, and multilingual content management. GPL-2.0+ licensed.
+
+- **[DokuWiki](https://github.com/dokuwiki/dokuwiki)** [![GitHub stars](https://img.shields.io/github/stars/dokuwiki/dokuwiki?style=social&color=white)](https://github.com/dokuwiki/dokuwiki/stargazers)  
+  *Lightweight, standards-compliant wiki that requires zero database setup.* Stores all content in plain text flat files, features built-in access control lists (ACLs), low hardware footprints, and hundreds of community plugins. GPL-2.0 licensed.
+
+- **[TriliumNext](https://github.com/TriliumNext/Notes)** [![GitHub stars](https://img.shields.io/github/stars/TriliumNext/Notes?style=social&color=white)](https://github.com/TriliumNext/Notes/stargazers)  
+  *Hierarchical note-taking application designed for large personal knowledge bases.* Features arbitrarily deep tree structures, JavaScript note execution, automated note deduplication, encryption, and REST API access. AGPL-3.0 licensed.
+
+- **[Sourcey](https://github.com/sourcey/sourcey)** [![GitHub stars](https://img.shields.io/github/stars/sourcey/sourcey?style=social&color=white)](https://github.com/sourcey/sourcey/stargazers)  
+  *High-precision developer documentation engine for APIs.* Ingests OpenAPI specs, MCP servers, and Markdown guides, generating static HTML documentation with interactive multi-language code samples and instant client-side search. AGPL-3.0 licensed.
+
+- **[Tome](https://github.com/tomehq/tome)** [![GitHub stars](https://img.shields.io/github/stars/tomehq/tome?style=social&color=white)](https://github.com/tomehq/tome/stargazers)  
+  *Modern open-source documentation platform for developer tools.* Features AI search with Bring-Your-Own-Key (BYOK), MCP server integration for AI coding assistants, OpenAPI/TypeDoc generators, and Markdown/MDX workflows. MIT licensed.
+
+---
+
+## 🧭 Architecture & Selection Matrix
+
+| Evaluation Dimension | Hosted SaaS Solutions | Self-Hosted Open-Source Platforms |
+| :--- | :--- | :--- |
+| **Data Privacy & Compliance** | Third-party cloud hosting; vendor SOC2/ISO27001 certifications. | **100% data sovereignty**; on-premises air-gapped or private cloud deployment (HIPAA/GDPR/ITAR friendly). |
+| **Total Cost of Ownership (TCO)** | Per-seat monthly subscription costs that scale linearly with headcount ($6 to $165+/seat/month). | **Zero per-seat licensing fees**; costs restricted to bare-metal or cloud infrastructure compute & storage. |
+| **Operational Maintenance** | Zero infrastructure maintenance; automated backups and security patches managed by vendor. | Requires in-house DevOps for container management, database backups, updates, and SSL/auth provisioning. |
+| **Customizability & Extensibility** | Pre-built templates, API integrations, and vendor-curated marketplace apps. | **Full source code access**; custom themes, database triggers, internal plugins, and arbitrary data pipelines. |
+| **Best-Fit Team Profile** | Customer service desks, non-technical operations teams, cross-department enterprise enterprises. | Developer tool teams, engineering runbook authors, security-conscious enterprises, local-first researchers. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from technical writers, open-source maintainers, and documentation leads are warmly welcomed!
+
+1. 🍴 **Fork the Repository**: Create your personal branch (`git checkout -b feature/add-new-kb-tool`).
+2. 📝 **Add/Update Entries**: Follow the formatting established in the tables and lists above.
+   - For SaaS tools: include verified starting tier pricing, explicit free tier / free trial limits, and company scale metrics.
+   - For Open-Source tools: include the social star badge linking to the stargazer page, tech stack, and license.
+3. 🧪 **Check Consistency**: Ensure links are valid, descriptions remain objective and factual, and markdown formatting is intact.
+4. 🚀 **Submit a Pull Request**: Provide a concise summary of additions or updates in your PR description.
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Knowledge-Base-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Knowledge-Base-Management&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsoring
+
+Thank you for visiting and using this curated directory! If this repository helped you find the right documentation engine or knowledge base architecture for your team, please consider supporting the project:
+
+- ⭐ **Star this repository** to improve its visibility and help other developers and teams find it.
+- 🍴 **Fork and contribute** new open-source gems, benchmarks, or updated pricing tiers.
+- 📢 **Share with colleagues**, technical writers, and developer communities.
+- ☕ **Sponsor the Maintainer**: Support ongoing curation, research, and open-source tooling directly on the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚖️ Disclaimer & License
+
+- **Disclaimer**: This directory is community-curated for informational and comparative purposes only. Product features, pricing tiers, and licensing models are subject to change by their respective vendors and maintainers.
+- **Data Compliance**: Organizations deploying knowledge management platforms must ensure compliance with applicable data protection regulations (GDPR, CCPA, HIPAA) and accessibility standards (WCAG).
+- **License**: Released under the [MIT License](LICENSE).
